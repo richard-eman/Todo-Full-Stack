@@ -1,5 +1,13 @@
 TODO App
 
+```
+npm install
+git checkout -b <branchname>
+npm run dev
+```
+
+See the breathtaking designs [here](http://localhost:3000/designs/)
+
 1.  Design a database to store a list of tasks, e.g. task details, priority, completed yes/no
 1.  Build the migrations and seed data
 1.  Build an API to list, add, update and delete
