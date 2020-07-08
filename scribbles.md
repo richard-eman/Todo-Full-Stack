@@ -23,7 +23,7 @@ reducer
 actions:
 
 SHOW_ERROR - yeah
-LIST_TASKS - do i need action for this? I guess :/
+LIST_TASKS - do i need action for this? I guess :/ maybe not. api can do that on it's own without any other user input :////////
 ADD_TASK - all fields including boolean incase user wanted to include something they'd already done.
 UPDATE_TASK - changes thing if a change has been made to it
 DELETE_TASK - deletes task based on name and or id
@@ -32,4 +32,7 @@ DELETE_TASK - deletes task based on name and or id
 db functions
     - need to do stuff with action data
     - need to do stuff
+    - need to do stuff with api
     - need to stringify and parse json files (in db functions or in that other file we used?).
+
+make that one api thing work (get tasks)
