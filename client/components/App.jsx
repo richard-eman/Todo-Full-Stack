@@ -23,13 +23,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
-      <h1>Todo</h1>
       <h1 onClick={this.fetchTasks}>Nice</h1>
-      {/* <Router>
-        <Route exact path="/list" component={() => <button onClick={}></button>} />
-      </Router> */}
-      </>
     )
   }
 }
