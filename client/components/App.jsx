@@ -1,7 +1,9 @@
 import React from 'react'
-import { HashRouter as Router, Route } from "react-router-dom";
+import { connect } from 'react-redux'
 
 import { getTasks } from '../apis'
+
+import TodoList from './TodoList'
 
 class App extends React.Component {
   state = {
@@ -23,10 +25,19 @@ class App extends React.Component {
 
   render() {
     return (
+      <>
       <h1 onClick={this.fetchTasks}>Nice</h1>
+      <TodoList/>
+      </>
     )
   }
 }
 
 
-export default App
+function mapStateToProps(globalState) {
+  return {
+    animals: globalState.animals
+  }
+}
+
+export default connect(mapStateToProps)(App)
