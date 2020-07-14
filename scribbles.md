@@ -198,7 +198,13 @@ Date:   Wed Jul 8 13:32:46 2020 +1200
 
     test db function
 
-Epic. Things worked:
+
+
+### Epic. Things worked:
+git rebase tutorials linked above are good. Once done:
+delete remote branch: git push origin --delete richard
+then push again
+
 
 commit a5dd24f87d57aa4b22b35de4577be7de266b9ece (HEAD -> richard)
 Author: Richard E <46254658+richard-eman@users.noreply.github.com>
