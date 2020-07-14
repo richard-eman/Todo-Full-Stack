@@ -6,12 +6,16 @@ import Task from './Task'
 function TodoList(props) {
   console.log(props)
   return (
-    // map data from state with Task component
-    <ul>
+
+    // shit was breaking because shit was trying to be used when shit was undefined.
+    // Changing initialState in reducer to null fixed the issue
+    <div>
     {props.tasks != null &&
-      <Task task={props.tasks[0]}/>
+      props.tasks.map(task => {
+        return <Task task={task} key={task.id}/>
+      })
     }
-    </ul>
+    </div>
   )
 }
 

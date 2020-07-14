@@ -99,5 +99,12 @@ must do multiple api stuff.
 // reducer matches action.type with case. Case uses const names from index
 // reducer runs action upon match (sets global state and uses api to set db)
 // conditional stuff will bring user back to TodoList
-
 // make sure delete button is not easy to hit on accident.
+
+
+
+
+food app
+have list of what you like
+in a group, get list of what people like in common (english?)
+(family, party, work)

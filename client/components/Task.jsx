@@ -7,17 +7,18 @@ import EditTask from './EditTask'
 import DeleteTask from './DeleteTask'
 
 function Task(props) {
-  console.log('task component loaded', props)
- 
-  console.log('sdf', props)
+const task = props.task
   return (
-    <li>
-      <h2>{props.task.task_name}</h2>
+    <div>
+      <h3>{task.task_name}</h3>
+      <p>{task.details}</p>
+      <p>Priority:</p>
+      <p>{task.priority}</p>
       <AddTaskButton/>
       <AddTaskForm/>
       <EditTask/>
       <DeleteTask/>
-    </li>
+    </div>
   )
 }
 

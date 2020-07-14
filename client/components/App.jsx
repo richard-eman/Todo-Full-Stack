@@ -11,7 +11,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('component did map')
+    console.log('App did mount')
     this.props.dispatch(fetchTasks())
   }
 
