@@ -11,7 +11,7 @@ function AddTaskButton(props) {
 
 function mapStateToProps(globalState) {
   return {
-    animals: globalState.animals
+    // tasks: globalState.tasks
   }
 }
 

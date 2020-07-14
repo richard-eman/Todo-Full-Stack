@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
 import { getTasks } from '../apis'
+import { fetchTasks } from '../actions'
 
 import TodoList from './TodoList'
 
@@ -11,10 +11,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('App mount')
+    console.log('component did map')
+    this.props.dispatch(fetchTasks())
   }
 
-  fetchTasks = () => {
+  fetchTasksWithAPI = () => {
     getTasks()
       .then(tasks => {
         this.setState({
@@ -24,20 +25,14 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <>
-      <h1 onClick={this.fetchTasks}>Nice</h1>
+      <h1 onClick={this.fetchTasksWithAPI}>Nice</h1>
       <TodoList/>
       </>
     )
   }
 }
 
-
-function mapStateToProps(globalState) {
-  return {
-    animals: globalState.animals
-  }
-}
-
-export default connect(mapStateToProps)(App)
+export default connect()(App)

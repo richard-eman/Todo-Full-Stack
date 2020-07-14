@@ -14,7 +14,7 @@ class AddTaskForm extends React.Component {
 
 function mapStateToProps(globalState) {
   return {
-    animals: globalState.animals
+    // tasks: globalState.tasks
   }
 }
 

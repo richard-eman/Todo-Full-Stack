@@ -7,10 +7,12 @@ import EditTask from './EditTask'
 import DeleteTask from './DeleteTask'
 
 function Task(props) {
-
+  console.log('task component loaded', props)
+ 
+  console.log('sdf', props)
   return (
     <li>
-      // global state data
+      <h2>{props.task.task_name}</h2>
       <AddTaskButton/>
       <AddTaskForm/>
       <EditTask/>
@@ -19,10 +21,11 @@ function Task(props) {
   )
 }
 
-function mapStateToProps(globalState) {
-  return {
-    animals: globalState.animals
-  }
-}
+// function mapStateToProps(globalState) {
+//   return {
+//     tasks: globalState.tasks
+//   }
+// }
 
-export default connect(mapStateToProps)(Task)
+// export default connect(mapStateToProps)(Task)
+export default connect()(Task)

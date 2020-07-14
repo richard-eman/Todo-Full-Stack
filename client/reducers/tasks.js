@@ -1,11 +1,11 @@
-import { LIST_TASKS } from "./actions"
+import { LIST_TASKS } from "../actions"
 
-const initialState = []
+const initialState = null
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case LIST_TASKS:
-      return action.getTasks
+      return action.tasks
     default:
       return state
   }
