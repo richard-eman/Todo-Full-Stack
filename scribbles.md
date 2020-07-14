@@ -152,6 +152,8 @@ class AddTaskButton extends React.Component {
 
 export default connect()(AddTaskButton)
 ```
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
+https://confluence.atlassian.com/bitbucketserverkb/how-do-you-make-changes-on-a-specific-commit-779171729.html
 
 commit 0814a5af563a41a8a78337a47628dbfee18462a6 (HEAD -> richard, origin/richard, richard-back-up)
 Author: Rose <62679021+rose-mead@users.noreply.github.com>
