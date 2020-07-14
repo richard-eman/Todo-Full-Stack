@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 
 import AddTaskButton from './AddTaskButton'
 import AddTaskForm from './AddTaskForm'
-import EditTask from './EditTask'
+import EditTaskForm from './EditTaskForm'
+import EditTaskButton from './EditTaskButton'
 import DeleteTask from './DeleteTask'
 
 function Task(props) {
@@ -14,9 +15,17 @@ const task = props.task
       <p>{task.details}</p>
       <p>Priority:</p>
       <p>{task.priority}</p>
-      <AddTaskButton/>
+      {/* taskId prop is for if I'd want to make only a certain button disapear. Currently, all do because global state boolean is changed. */}
+      {props.showAddTaskForm ?
       <AddTaskForm/>
-      <EditTask/>
+      :
+      <AddTaskButton taskId={props.task.id}/>
+      }
+      {props.showEditForm ?
+      <EditTaskForm/>
+      :
+      <EditTaskButton taskId={props.task.id}/>
+      }
       <DeleteTask/>
     </div>
   )
@@ -24,7 +33,10 @@ const task = props.task
 
 function mapStateToProps(globalState) {
   return {
-    showAddButton: globalState.showAddButton
+    // I'm sorry
+    showAddTaskForm: globalState.showAddButton,
+
+    showEditForm: globalState.showEditForm,
   }
 }
 
