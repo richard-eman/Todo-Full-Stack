@@ -22,11 +22,10 @@ const task = props.task
   )
 }
 
-// function mapStateToProps(globalState) {
-//   return {
-//     tasks: globalState.tasks
-//   }
-// }
+function mapStateToProps(globalState) {
+  return {
+    showAddButton: globalState.showAddButton
+  }
+}
 
-// export default connect(mapStateToProps)(Task)
-export default connect()(Task)
+export default connect(mapStateToProps)(Task)

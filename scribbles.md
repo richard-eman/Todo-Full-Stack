@@ -108,3 +108,47 @@ food app
 have list of what you like
 in a group, get list of what people like in common (english?)
 (family, party, work)
+
+//o set global state
+//o create action
+//o create dispatch
+//o set onClick to dispatch
+
+```js
+import React from 'react'
+import { connect } from 'react-redux'
+
+
+class AddTaskButton extends React.Component {
+  state = {
+    bro: ""
+  }
+  componentDidMount(){
+    console.log('addButton mount')
+  }
+  
+  handleClick = e => {
+    event.preventDefault()
+    this.setState({
+      bro: 'Yowza!'
+    })
+  }
+  
+  // set global state
+  // create action
+  // create dispatch
+  // set onClick to dispatch
+  
+  render(){
+    console.log('add but render')
+    return (
+      <button onClick={this.handleClick}>
+        the fox said {this.state.bro} bro
+      </button>
+    )
+  }
+}
+
+
+export default connect()(AddTaskButton)
+```

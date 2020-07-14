@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
 import tasks from "./tasks"
-// import stuff from './stuff'
+import showAddButton from "./addButton"
 
 export default combineReducers({
- tasks
+ tasks,
+ showAddButton,
 })
