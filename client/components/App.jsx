@@ -9,7 +9,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('App mount')
+
   }
 
   fetchTasks = () => {
