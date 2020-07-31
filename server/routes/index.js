@@ -9,14 +9,6 @@ router.get('/yo', (req, res) => {
   res.sendStatus(200)
 })
 
-// test db function
-router.get('/hi', (req, res) => {
-  db.getTasks()
-    .then(tasks => {
-        res.json(tasks)
-    })
-})
-
 router.get('/list', (req, res) => {
   db.getTasks()
     .then(tasks => {

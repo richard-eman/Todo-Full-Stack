@@ -12,15 +12,15 @@ class EditTask extends React.Component {
 
   render() {
     return (
-      <>
-        <h1>EditTask</h1>
-      </>
+      <h1>EditTask</h1>
     )
   }
 }
 
-// const mapStateToProps = ({
+function mapStateToProps(globalState) {
+  return {
 
-// })
+  }
+}
 
-export default /*connect(mapStateToProps)*/(EditTask)
+export default connect(mapStateToProps)(EditTask)

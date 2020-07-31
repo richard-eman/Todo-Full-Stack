@@ -12,11 +12,15 @@ class Tasks extends React.Component {
   }
 
   render() {
+    const task = this.props.task
+
     return (
-      <>
-        <h1>Task</h1>
-        <DeleteButton/>
-      </>
+      <div>
+        <h3>{task.task_name}</h3>
+        <p>{task.details}</p>
+        <p>Priority: {task.priority}</p>
+        <DeleteButton />
+      </div>
     )
   }
 }

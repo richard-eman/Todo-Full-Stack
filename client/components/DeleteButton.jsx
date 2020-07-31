@@ -11,15 +11,15 @@ class DeleteButton extends React.Component {
 
   render() {
     return (
-      <>
-        <button>DeleteButton</button>
-      </>
+      <button>DeleteButton</button>
     )
   }
 }
 
-// const mapStateToProps = ({
+function mapStateToProps(globalState) {
+  return {
+    
+  }
+}
 
-// })
-
-export default /*connect(mapStateToProps)*/(DeleteButton)
+export default connect(mapStateToProps)(DeleteButton)

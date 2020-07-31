@@ -12,15 +12,15 @@ class AddTask extends React.Component {
 
   render() {
     return (
-      <>
-        <h1>AddTask</h1>
-      </>
+      <h1>AddTask</h1>
     )
   }
 }
 
-// const mapStateToProps = ({
+function mapStateToProps(globalState) {
+  return {
 
-// })
+  }
+}
 
-export default /*connect(mapStateToProps)*/(AddTask)
+export default connect(mapStateToProps)(AddTask)
