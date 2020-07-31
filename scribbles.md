@@ -36,3 +36,26 @@ db functions
     - need to stringify and parse json files (in db functions or in that other file we used?).
 
 make that one api thing work (get tasks)
+
+## What have I done so far? (31st July 20)
+
+made api route with superAgent
+made db function
+using route gets body with db data as response
+I set local state with data from db on v. server.
+
+## Qs
+
+did I set up redux (it's components(reducer etc))?
+I should plan and design things
+
+How does rebase make commit history cleaner? Can ask Eddie. I think he told me during foundations but yeah lol (combining commits like for testing).
+
+## ToDo for the ToDo List web app
+
+Find where I made designs in notebook
+list components
+set components
+make all tasks display
+I'd like edit tasks to do a hash route I think
+delete will make window show above everything else
