@@ -344,3 +344,30 @@ Author: Richard E <46254658+richard-eman@users.noreply.github.com>
 Date:   Wed Jul 8 13:32:46 2020 +1200
 
     test db function
+
+
+
+
+
+
+
+
+
+
+
+
+### 3rd Aug
+
+- edit
+form
+buttons with normal routes for now :( Which means calling server more often
+api
+db function
+conditional stuff to work with hash router
+
+- delete
+form
+buttons with normal routes for now :( Which means calling server more often
+api
+db function
+conditional stuff to work with hash router

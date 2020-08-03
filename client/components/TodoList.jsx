@@ -19,13 +19,14 @@ class Todo extends React.Component {
   // Changing initialState in reducer to null fixed the issue
   render() {
     return (
-      <div>
+      <>
+        <h1>Todo List</h1>
         {this.props.tasks != null &&
           this.props.tasks.map(task => {
             return <Tasks task={task} key={task.id} />
           })
         }
-      </div>
+      </>
     )
   }
 }

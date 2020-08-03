@@ -1,10 +1,10 @@
 import React from 'react'
-import HomePage from './HomePage'
+import TodoList from './TodoList'
 
 const App = () => {
 
   return (
-    <HomePage/>
+    <TodoList/>
   )
 }
 
