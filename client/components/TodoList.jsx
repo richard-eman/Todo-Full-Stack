@@ -1,7 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { HashRouter as Router, Route, Link } from 'react-router-dom'
 
 import Tasks from './Tasks'
+import HomePage from './HomePage'
+import AddTask from './AddTask'
 
 import { getTasks } from '../apis'
 import { fetchTasks } from '../actions'
@@ -20,7 +23,13 @@ class Todo extends React.Component {
   render() {
     return (
       <>
-        <h1>Todo List</h1>
+        {/* <h1>Todo List</h1> */}
+        <Router>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/AddTask" component={AddTask} />
+          <h3><Link to="/">Home</Link></h3>
+          <h3><Link to="/AddTask">Add</Link></h3>
+        </Router>
         {this.props.tasks != null &&
           this.props.tasks.map(task => {
             return <Tasks task={task} key={task.id} />

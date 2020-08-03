@@ -11,10 +11,10 @@ class App extends React.Component {
     return (
       <>
         <h1>Todo List</h1>
-        {/* <Router>
+        <Router>
           <Route path="/todolist" component={TodoList} />
-          <Link to="/todolist">todolist</Link>
-        </Router> */}
+          <h3><Link to="/todolist">todolist</Link></h3>
+        </Router>
       </>
     )
   }
