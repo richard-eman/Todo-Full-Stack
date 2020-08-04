@@ -6,7 +6,6 @@ import Tasks from './Tasks'
 import HomePage from './HomePage'
 import AddTask from './AddTask'
 
-import { getTasks } from '../apis'
 import { fetchTasks } from '../actions'
 
 class Todo extends React.Component {
@@ -23,7 +22,6 @@ class Todo extends React.Component {
   render() {
     return (
       <>
-        {/* <h1>Todo List</h1> */}
         <Router>
           <Route exact path="/" component={HomePage} />
           <Route path="/AddTask" component={AddTask} />
