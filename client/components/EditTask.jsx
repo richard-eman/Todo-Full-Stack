@@ -9,14 +9,21 @@ class EditTask extends React.Component {
   }
 
   handleChange = e => {
-    this.setState({
-      name: e.target.name,
-      details: e.target.details,
-    })
+    if ( e.target.name == "details"){
+      this.setState({
+        details: e.target.value,
+      })
+    }
+    else if ( e.target.name == "name"){
+      this.setState({
+        name: e.target.value,
+      })
+    }
   }
 
-  handleSubmit = () => {
-    console.log('yo')
+  handleSubmit = e => {
+    e.preventDefault()
+    console.log('yo (EditTask)')
   }
 
   render() {

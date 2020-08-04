@@ -356,12 +356,14 @@ Date:   Wed Jul 8 13:32:46 2020 +1200
 
 
 
-### 3rd Aug
+### 3rd & 4th Aug
 
 - edit
 oform
 xbuttons with normal routes for now :( Which means calling server more often
-conditional stuff to work with hash router
+oconditional stuff to work with hash router
+ohow pass props? Will i have to use GS (comp unmount, comp did mount)?
+I'll use GS because I don't want to use hooks (currently) or params in the url because there's a lot of data. All this because I don't want to call the server for speed.
 api
 db function
 
