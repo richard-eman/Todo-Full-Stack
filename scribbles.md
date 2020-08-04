@@ -363,7 +363,9 @@ oform
 xbuttons with normal routes for now :( Which means calling server more often
 oconditional stuff to work with hash router
 ohow pass props? Will i have to use GS (comp unmount, comp did mount)?
-I'll use GS because I don't want to use hooks (currently) or params in the url because there's a lot of data. All this because I don't want to call the server for speed.
+  I'll use GS because I don't want to use hooks (currently) or params in the url because there's a lot of data. All this because I don't want to call the server for speed.
+  will i need a boolean?
+holy fuck desktop is slow as fuuck when multi tasking
 api
 db function
 

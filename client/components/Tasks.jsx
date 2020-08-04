@@ -1,7 +1,7 @@
 import React from 'react'
-import { HashRouter as Router, Route, Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { HashRouter as Router, Link } from 'react-router-dom'
 
-import HomePage from './HomePage'
 import DeleteButton from './DeleteButton'
 
 class Tasks extends React.Component {
@@ -10,6 +10,10 @@ class Tasks extends React.Component {
 
   componentDidMount() {
 
+  }
+  
+  handleClick = () => {
+    this.props.dispatch()
   }
 
   render() {
@@ -22,12 +26,21 @@ class Tasks extends React.Component {
         <p>Priority: {task.priority}</p>
         <DeleteButton />
         <Router>
-          <Link to="/edit">Edit Task</Link>
+          <Link to="/edit">
+            <button onClick={this.handleClick}>
+              Edit Task
+            </button>
+          </Link>
         </Router>
       </div>
     )
   }
 }
 
+function mapStateToProps(gloabalState) {
+  return {
+    
+  }
+}
 
-export default Tasks
+export default connect(mapStateToProps)(Tasks)
