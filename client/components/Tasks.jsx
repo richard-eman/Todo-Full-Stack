@@ -22,9 +22,8 @@ class Tasks extends React.Component {
         <p>Priority: {task.priority}</p>
         <DeleteButton />
         <Router>
-          <Route exact path="/" component={HomePage} />
+          <Link to="/edit">Edit Task</Link>
         </Router>
-        <button href="/edit:id"></button>
       </div>
     )
   }

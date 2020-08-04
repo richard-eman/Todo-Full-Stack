@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import { HashRouter as Router, Route } from 'react-router-dom'
 
 class EditTask extends React.Component {
   state = {
@@ -23,7 +22,7 @@ class EditTask extends React.Component {
   render() {
     return (
       <>
-        <h1>EditTask</h1>
+        <h2>EditTask</h2>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="name">Name</label>
           <input type="text"

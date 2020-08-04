@@ -1,8 +1,6 @@
 import React from 'react'
 import { HashRouter as Router, Route, Link } from 'react-router-dom'
 
-import TodoList from './TodoList'
-
 class App extends React.Component {
 
   // component={() => <button onClick={}></button>}
@@ -10,10 +8,9 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <h1>Todo List</h1>
+        <h2>Home Page</h2>
         <Router>
-          <Route path="/todolist" component={TodoList} />
-          <h3><Link to="/todolist">todolist</Link></h3>
+          <h3><Link to="/todo-list">Your Todo List</Link></h3>
         </Router>
       </>
     )
