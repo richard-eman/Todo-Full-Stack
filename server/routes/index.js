@@ -16,4 +16,9 @@ router.get('/list', (req, res) => {
     })
 })
 
+router.get('/edit:taskid', (req, res) => {
+  console.log(req.params.id)
+  res.send("yo")
+})
+
 module.exports = router

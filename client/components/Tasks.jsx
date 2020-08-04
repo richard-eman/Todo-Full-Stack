@@ -1,6 +1,7 @@
 import React from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { HashRouter as Router, Route, Link } from 'react-router-dom'
 
+import HomePage from './HomePage'
 import DeleteButton from './DeleteButton'
 
 class Tasks extends React.Component {
@@ -20,6 +21,9 @@ class Tasks extends React.Component {
         <p>{task.details}</p>
         <p>Priority: {task.priority}</p>
         <DeleteButton />
+        <Router>
+          <Link to="/edit">Edit Task</Link>
+        </Router>
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { link } from 'react-router-dom'
 
 class AddTask extends React.Component {
   state = {
@@ -12,7 +12,7 @@ class AddTask extends React.Component {
 
   render() {
     return (
-      <h1>AddTask</h1>
+      <h2>AddTask</h2>
     )
   }
 }
