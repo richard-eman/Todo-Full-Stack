@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
+import { editTask } from '../apis'
+
 class EditTask extends React.Component {
   state = {
     name: this.props.task.task_name,
@@ -23,7 +25,13 @@ class EditTask extends React.Component {
   }
 
   handleSubmit = e => {
+    const task = {
+      id: this.props.task.id,
+      task_name: this.state.name,
+      details: this.state.details
+    }
     e.preventDefault()
+    editTask(task)
   }
 
   render() {

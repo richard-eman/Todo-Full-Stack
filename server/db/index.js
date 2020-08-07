@@ -7,12 +7,13 @@ function getTasks(db = connection) {
   return db('todos').select()
 }
 
-function editTask(db = connection, task) {
+function editTask(task, db = connection) {
+  console.log('db', task)
   return db('todos').where('id', task.id)
-  .update(
-    'task_name', task.name,
-    'details', task.details,
-    )
+  .update(task)
+  .then(() => {//forgot this stupid thing dammit lol took woo much time
+    return db('todos').where('id', task.id).first()
+  })
 }
 
 module.exports = {

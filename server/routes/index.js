@@ -16,9 +16,9 @@ router.get('/list', (req, res) => {
     })
 })
 
-router.get('/edit:taskid', (req, res) => {
-  console.log(req.params.id)
-  res.send("yo")
+router.post('/edit', (req, res) => {
+  console.log('yoyoyo', req.body)
+  db.editTask(req.body)
 })
 
 module.exports = router
