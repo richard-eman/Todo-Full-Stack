@@ -17,8 +17,11 @@ router.get('/list', (req, res) => {
 })
 
 router.post('/edit', (req, res) => {
-  console.log('yoyoyo', req.body)
   db.editTask(req.body)
+})
+
+router.post('/add', (req, res) => {
+  db.addTask(req.body)
 })
 
 module.exports = router

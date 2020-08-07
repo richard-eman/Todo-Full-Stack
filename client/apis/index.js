@@ -15,3 +15,12 @@ export function editTask(task) {
       return res.body
     })
 }
+
+export function addTask(task) {
+  console.log('api', task)
+  return request.post('add')
+    .send(task)
+    .then(res => {
+      return res.body
+    })
+}
