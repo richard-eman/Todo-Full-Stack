@@ -8,7 +8,6 @@ function getTasks(db = connection) {
 }
 
 function editTask(task, db = connection) {
-  console.log('db', task)
   return db('todos').where('id', task.id)
   .update(task)
   .then(() => {//forgot this stupid thing dammit lol took woo much time
@@ -16,7 +15,17 @@ function editTask(task, db = connection) {
   })
 }
 
+function addTask(task, db = connection) {
+  console.log('db addTask', task)
+  return db('todos').insert(task)
+  .then((something) => {
+    console.log(something)
+    return something
+  })
+}
+
 module.exports = {
   getTasks,
-  editTask
+  editTask,
+  addTask
 }

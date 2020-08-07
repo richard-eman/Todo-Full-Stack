@@ -4,8 +4,7 @@ const router = express.Router()
 
 const db = require('../db')
 
-// test route
-router.get('/yo', (req, res) => {
+router.get('/test', (req, res) => {
   res.sendStatus(200)
 })
 

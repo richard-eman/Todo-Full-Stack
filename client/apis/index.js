@@ -8,7 +8,6 @@ export function getTasks() {
 }
 
 export function editTask(task) {
-  console.log('api', task)
   return request.post('edit')
     .send(task)
     .then(res => {
@@ -17,7 +16,7 @@ export function editTask(task) {
 }
 
 export function addTask(task) {
-  console.log('api', task)
+  console.log('api addTask', task)
   return request.post('add')
     .send(task)
     .then(res => {
