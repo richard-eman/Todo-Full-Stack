@@ -26,7 +26,7 @@ class Tasks extends React.Component {
         <h3>{task.task_name}</h3>
         <p>{task.details}</p>
         <p>Priority: {task.priority}</p>
-        <DeleteButton />
+        <DeleteButton id={task.id} />
         <Router>
           <Link to="/edit">
             <button onClick={this.handleClick}>Edit Task</button>

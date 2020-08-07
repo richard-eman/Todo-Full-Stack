@@ -1,6 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
-
 import { deleteTask } from '../apis'
 
 class DeleteButton extends React.Component {
@@ -8,10 +6,9 @@ class DeleteButton extends React.Component {
   }
 
   handleClick = e => {
-    const id = this.props.task.id
     e.preventDefault()
 
-    deleteTask(id)
+    deleteTask(this.props.id)
   }
 
   render() {
@@ -21,10 +18,4 @@ class DeleteButton extends React.Component {
   }
 }
 
-function mapStateToProps(globalState) {
-  return {
-    task: globalState.tasks.task
-  }
-}
-
-export default connect(mapStateToProps)(DeleteButton)
+export default DeleteButton
