@@ -1,24 +1,29 @@
 import React from 'react'
-import { connect } from 'react-redux'// I want to update this with props passed into here. What will be passed into here?
+import { connect } from 'react-redux'
+
+import { deleteTask } from '../apis'
 
 class DeleteButton extends React.Component {
   state = {
   }
 
-  componentDidMount() {
+  handleClick = e => {
+    const id = this.props.task.id
+    e.preventDefault()
 
+    deleteTask(id)
   }
 
   render() {
     return (
-      <button>DeleteButton</button>
+      <button onClick={this.handleClick}>DeleteButton</button>
     )
   }
 }
 
 function mapStateToProps(globalState) {
   return {
-    
+    task: globalState.tasks.task
   }
 }
 
