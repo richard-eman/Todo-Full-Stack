@@ -23,4 +23,8 @@ router.post('/add', (req, res) => {
   db.addTask(req.body)
 })
 
+router.post('/delete', (req, res) => {
+  db.deleteTask(req.body)
+})
+
 module.exports = router

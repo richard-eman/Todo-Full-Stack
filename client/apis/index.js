@@ -16,9 +16,17 @@ export function editTask(task) {
 }
 
 export function addTask(task) {
-  console.log('api addTask', task)
   return request.post('add')
     .send(task)
+    .then(res => {
+      return res.body
+    })
+}
+
+export function deleteTask(id) {
+  console.log('api delete', task)
+  return request.post('delete')
+    .send(id)
     .then(res => {
       return res.body
     })
