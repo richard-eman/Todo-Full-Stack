@@ -356,7 +356,7 @@ Date:   Wed Jul 8 13:32:46 2020 +1200
 
 
 
-### 3rd & 4th Aug
+### 3rd & 4th & 7th Aug
 
 - edit
 oform
@@ -368,6 +368,28 @@ ohow pass props? Will i have to use GS (comp unmount, comp did mount)?
 holy fuck desktop is slow as fuuck when multi tasking
 api
 db function
+gs
+  reducer
+  action
+
+check unmount is happening with routing
+
+#### GS:
+should get over-written each dispatch
+on but press, dispatch task data to gs
+  what data is being used?
+  action
+  reducer
+    import these 
+pull data from gs using connect
+on mount/onDismount get changed data from GS for List
+#### DB:
+make db function for edit
+#### API:
+make route
+import
+call api on submit
+(refer to previous API/DB work)
 
 - delete
 form

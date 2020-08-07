@@ -27,9 +27,7 @@ class Tasks extends React.Component {
         <DeleteButton />
         <Router>
           <Link to="/edit">
-            <button onClick={this.handleClick}>
-              Edit Task
-            </button>
+            <button onClick={this.handleClick}>Edit Task</button>
           </Link>
         </Router>
       </div>

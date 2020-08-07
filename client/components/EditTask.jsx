@@ -45,7 +45,7 @@ class EditTask extends React.Component {
           />
           <label htmlFor="priority">Priority</label>
           {/* radio buttons go here */}
-          <input type="submit" value="Add" />
+          <input type="submit" value="Save" />
         </form>
       </>
     )
