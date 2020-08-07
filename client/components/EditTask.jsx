@@ -51,7 +51,7 @@ class EditTask extends React.Component {
             value={this.state.details}
             onChange={this.handleChange}
           />
-          <label htmlFor="priority">Priority</label>
+          {/* <label htmlFor="priority">Priority</label> */}
           {/* radio buttons go here */}
           {/* also completion status */}
           <input type="submit" value="Save" />
