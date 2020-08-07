@@ -24,7 +24,7 @@ export function addTask(task) {
 }
 
 export function deleteTask(id) {
-  console.log('api delete', task)
+  console.log('ya gotta refresh lol')
   return request.post('delete')
     .send(id)
     .then(res => {

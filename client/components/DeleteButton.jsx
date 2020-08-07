@@ -6,9 +6,10 @@ class DeleteButton extends React.Component {
   }
 
   handleClick = e => {
+    const task = {id: this.props.id}
     e.preventDefault()
 
-    deleteTask(this.props.id)
+    deleteTask(task)
   }
 
   render() {

@@ -16,10 +16,15 @@ function editTask(task, db = connection) {
 }
 
 function addTask(task, db = connection) {
-  console.log('db addTask', task)
   return db('todos').insert(task)
   .then((something) => {
-    console.log(something)
+    return something
+  })
+}
+
+function deleteTask(task, db = connection) {
+  return db('todos').where('id', task.id).delete()
+  .then((something) => {
     return something
   })
 }
@@ -27,5 +32,6 @@ function addTask(task, db = connection) {
 module.exports = {
   getTasks,
   editTask,
-  addTask
+  addTask,
+  deleteTask
 }
