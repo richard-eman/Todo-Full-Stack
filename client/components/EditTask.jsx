@@ -3,9 +3,10 @@ import { connect } from 'react-redux'
 
 class EditTask extends React.Component {
   state = {
-    name: this.props.name,
-    details: this.props.details,
-    priority: this.props.priority,
+    name: this.props.task.task_name,
+    details: this.props.task.details,
+    priority: this.props.task.priority,
+    completed: this.props.task.completed,
   }
 
   handleChange = e => {
@@ -23,7 +24,6 @@ class EditTask extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    console.log('yo (EditTask)')
   }
 
   render() {
@@ -45,6 +45,7 @@ class EditTask extends React.Component {
           />
           <label htmlFor="priority">Priority</label>
           {/* radio buttons go here */}
+          {/* also completion status */}
           <input type="submit" value="Save" />
         </form>
       </>
@@ -54,7 +55,7 @@ class EditTask extends React.Component {
 
 function mapStateToProps(globalState) {
   return {
-
+    task: globalState.tasks.task
   }
 }
 

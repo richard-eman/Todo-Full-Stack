@@ -15,8 +15,6 @@ class Todo extends React.Component {
     this.props.dispatch(fetchTasks())
   }
 
-  // shit was breaking because shit was trying to be used when shit was undefined.
-  // Changing initialState in reducer to null fixed the issue
   render() {
     return (
       <>
@@ -36,7 +34,7 @@ class Todo extends React.Component {
 
 function mapStateToProps(globalState) {
   return {
-    tasks: globalState.tasks
+    tasks: globalState.tasks.tasks
   }
 }
 

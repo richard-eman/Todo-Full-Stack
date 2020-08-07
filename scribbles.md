@@ -376,13 +376,14 @@ check unmount is happening with routing
 
 #### GS:
 should get over-written each dispatch
-on but press, dispatch task data to gs
-  what data is being used?
-  action
-  reducer
-    import these 
-pull data from gs using connect
+oon but press, dispatch task data to gs
+  owhat data is being used?
+  oaction
+  oreducer
+    oimport these 
+opull data from gs using connect
 on mount/onDismount get changed data from GS for List
+  compare ID to that in GS
 #### DB:
 make db function for edit
 #### API:
