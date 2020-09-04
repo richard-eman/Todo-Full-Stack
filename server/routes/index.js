@@ -11,7 +11,7 @@ router.get('/test', (req, res) => {
 router.get('/list', (req, res) => {
   db.getTasks()
     .then(tasks => {
-        res.json(tasks)
+      res.json(tasks)
     })
 })
 
@@ -25,6 +25,10 @@ router.post('/add', (req, res) => {
 
 router.post('/delete', (req, res) => {
   db.deleteTask(req.body)
+  .then(something => {
+    console.log("delete api", something)
+    res.json(something)
+  })
 })
 
 module.exports = router
