@@ -404,7 +404,7 @@ skip until required :/ get bearings
   how does routing work currently?
 -make apis return something:
   -delete
-delete api return
+odelete api return
 make page do something on delete:
     update?
     replace thing with message and then remove

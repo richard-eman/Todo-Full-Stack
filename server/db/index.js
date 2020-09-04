@@ -10,15 +10,15 @@ function getTasks(db = connection) {
 function editTask(task, db = connection) {
   return db('todos').where('id', task.id)
   .update(task)
-  .then(() => {//forgot this stupid thing dammit lol took woo much time
+  .then(() => { //forgot this stupid promise dammit lol took soo much time
     return db('todos').where('id', task.id).first()
   })
 }
 
 function addTask(task, db = connection) {
   return db('todos').insert(task)
-  .then((something) => {
-    return something
+  .then( newTaskId => {
+    return newTaskId
   })
 }
 

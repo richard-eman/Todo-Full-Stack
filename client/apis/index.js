@@ -19,7 +19,7 @@ export function addTask(task) {
   return request.post('add')
     .send(task)
     .then(res => {
-      return res.body
+      return res.body[0]
     })
 }
 

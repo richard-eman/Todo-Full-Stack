@@ -17,10 +17,16 @@ router.get('/list', (req, res) => {
 
 router.post('/edit', (req, res) => {
   db.editTask(req.body)
+  .then(changedTask => {
+    res.json(changedTask.id)
+  })
 })
 
 router.post('/add', (req, res) => {
   db.addTask(req.body)
+  .then(newTaskId => {
+    res.json(newTaskId)
+  })
 })
 
 router.post('/delete', (req, res) => {
