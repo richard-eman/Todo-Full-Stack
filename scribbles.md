@@ -385,7 +385,7 @@ opull data from gs using connect
 on mount/onDismount get changed data from GS for List
   compare ID to that in GS
 #### DB:
-make db function for edit
+omake db function for edit
 #### API:
 make route
 import
@@ -398,3 +398,22 @@ buttons with normal routes for now :( Which means calling server more often
 api
 db function
 conditional stuff to work with hash router
+
+## September wk1 friday
+skip until required :/ get bearings
+  how does routing work currently?
+-make apis return something:
+  -delete
+delete api return
+make page do something on delete:
+    update?
+    replace thing with message and then remove
+    replace using state change
+  -add
+add api return
+make page do something on add
+    go back to /#/todo-list
+edit api return
+make page do something
+
+"see list api for return example"

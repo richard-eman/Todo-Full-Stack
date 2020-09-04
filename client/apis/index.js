@@ -23,10 +23,13 @@ export function addTask(task) {
     })
 }
 
-export function deleteTask(id) {
+export function deleteTask(usingTaskId) {
+  const task = {id: usingTaskId}
+
   console.log('ya gotta refresh lol')
+
   return request.post('delete')
-    .send(id)
+    .send(task)
     .then(res => {
       return res.body
     })
