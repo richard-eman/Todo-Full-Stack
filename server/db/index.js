@@ -24,8 +24,8 @@ function addTask(task, db = connection) {
 
 function deleteTask(task, db = connection) {
   return db('todos').where('id', task.id).delete()
-  .then((something) => {
-    return something
+  .then( numberOfDeletedTasks => {
+    return numberOfDeletedTasks
   })
 }
 

@@ -25,9 +25,8 @@ router.post('/add', (req, res) => {
 
 router.post('/delete', (req, res) => {
   db.deleteTask(req.body)
-  .then(something => {
-    console.log("delete api", something)
-    res.json(something)
+  .then(numberOfDeletedTasks => {
+    res.json(numberOfDeletedTasks)
   })
 })
 
