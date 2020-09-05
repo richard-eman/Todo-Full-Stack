@@ -32,6 +32,7 @@ class EditTask extends React.Component {
     }
     e.preventDefault()
     editTask(task)
+    location.assign('http://localhost:3000/#/todo-list')
   }
 
   render() {
