@@ -425,4 +425,12 @@ make form component
 making pages do something:
   can make button a link thingy instead of a submit (like what's used for nav curr).
   oUsed window.location.reload() to delete butt.
-    change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
+  // e.preventDefault() not needed with buttons as they have no default behavior
+  change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
+
+### Extra
+  change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
+
+### Issues
+  delete button
+    page uses server even with false in window.location.reload() argument :(((

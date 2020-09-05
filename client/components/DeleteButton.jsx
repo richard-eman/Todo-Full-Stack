@@ -6,9 +6,8 @@ class DeleteButton extends React.Component {
   }
 
   handleClick = e => {
-    e.preventDefault()
     deleteTask(this.props.id)
-    window.location.reload()
+    window.location.reload() // refreshes page
   }
 
   render() {
