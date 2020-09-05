@@ -422,3 +422,7 @@ make page do something
 "see list api for return example"
 
 make form component
+making pages do something:
+  can make button a link thingy instead of a submit (like what's used for nav curr).
+  oUsed window.location.reload() to delete butt.
+    change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
