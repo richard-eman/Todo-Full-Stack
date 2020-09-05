@@ -399,10 +399,10 @@ api
 db function
 conditional stuff to work with hash router
 
+
 ## September wk1 friday
-skip until required :/ get bearings
-  how does routing work currently?
--make apis return something:
+
+omake apis return something:
   -delete
 odelete api return
 make page do something on delete:
@@ -410,10 +410,15 @@ make page do something on delete:
     replace thing with message and then remove
     replace using state change
   -add
-add api return
+oadd api return
 make page do something on add
     go back to /#/todo-list
-edit api return
+add priority setter
+add completion status
+  -edit
+oedit api return
 make page do something
 
 "see list api for return example"
+
+make form component
