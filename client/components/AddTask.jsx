@@ -48,6 +48,7 @@ class AddTask extends React.Component {
     addTask(task)
     location.assign('http://localhost:3000/#/todo-list')
   }
+  
   render() {
     return (
       <>

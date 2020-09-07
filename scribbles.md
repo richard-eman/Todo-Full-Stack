@@ -105,7 +105,7 @@ new feature
 
 
 
-# Old Readme stuff
+## Old Readme stuff
 
 See the breathtaking designs [here](http://localhost:3000/designs/)
 
@@ -126,9 +126,9 @@ must use redux.
   two way data flow. (add and get stuff to global state)
 must do multiple api stuff.
 
-## Endpoints:
+### Endpoints:
 
-### get tasks:
+#### get tasks:
 ```js
 [
   {
@@ -148,7 +148,7 @@ must do multiple api stuff.
 ]
 ```
 
-### add task:
+#### add task:
 ```js
 {
   task_name: 'make bed',
@@ -158,7 +158,7 @@ must do multiple api stuff.
 }
 ```
 
-### delete task:
+#### delete task:
 ```js
 {
   id: 2,
@@ -166,7 +166,7 @@ must do multiple api stuff.
 }
 ```
 
-### edit task:
+#### edit task:
 ```js
 {
   task_name: 'make bed',
@@ -175,6 +175,7 @@ must do multiple api stuff.
   completed: false
 }
 ```
+### rando shit
 
 // set GS with data from db when App mounts
 // TodoList will mapStateToProps data from GS
@@ -237,6 +238,8 @@ class AddTaskButton extends React.Component {
 
 export default connect()(AddTaskButton)
 ```
+
+### Accidentally made commits under classmates name
 https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
 
 https://confluence.atlassian.com/bitbucketserverkb/how-do-you-make-changes-on-a-specific-commit-779171729.html
@@ -285,7 +288,7 @@ Date:   Wed Jul 8 13:32:46 2020 +1200
 
 
 
-### Epic. Things worked:
+#### Epic. Things worked:
 git rebase tutorials linked above are good. Once done:
 delete remote branch: git push origin --delete richard
 then push again
@@ -400,37 +403,60 @@ db function
 conditional stuff to work with hash router
 
 
+
+
+
+# Current Scribbles September
+
 ## September wk1 friday
 
 omake apis return something:
-  -delete
-odelete api return
-make page do something on delete:
-    update?
-    replace thing with message and then remove
-    replace using state change
-  -add
-oadd api return
-make page do something on add
-    go back to /#/todo-list
-add priority setter
-add completion status
-  -edit
-oedit api return
-make page do something
-
-"see list api for return example"
-
-make form component
-making pages do something:
-  can make button a link thingy instead of a submit (like what's used for nav curr).
+-delete
+  odelete api return
+  omake page do something on delete:
+-add
+  oadd api return
+  omake page do something on add
+    ogo back to /#/todo-list
+  oadd priority setter
+  oadd completion status
+-edit
+  oedit api return
+  o"see list api for return example"
+omaking pages do something:
+  xcan make button a link thingy instead of a submit (like what's used for nav curr).
   oUsed window.location.reload() to delete butt.
-  // e.preventDefault() not needed with buttons as they have no default behavior
-  change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
+  o// e.preventDefault() not needed with buttons as they have no default behavior
 
-### Extra
-  change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
+## Sept wk2
 
-### Issues
-  delete button
-    page uses server even with false in window.location.reload() argument :(((
+finish new form features and DB side of things
+  is table ready for new properties? remember how to mess with json...
+  new object to post
+  api
+  db
+Edit form stuff
+  form
+  new object to post
+  api
+  db
+    should I and can I make functions to reuse them?
+add text to form.
+CSS and make not ugly
+make form component
+make functions file for refactoring
+
+## Extra
+function that deletes task
+  change task (deleted message)(what?) and then make it shrink before refreshing page (use a timeout?)
+  update?(?)
+  replace thing with message "deleted" and then remove?
+  replace using state change?(to refresh?)
+
+## Issues
+-delete button
+  page uses server even with false in window.location.reload() argument :((( Maybe because the api call is made on mount in TodoList
+  change task (deleted message) and then make it shrink before refreshing page (use a timeout?)
+-How can I stop calling server for data keeping in mind user refreshing and shift+R refreshing? <-- this means I can't only get data after logging in for example.
+  Can have a refresh button on page like some apps have sync button.
+  This means I can get data initially once (somehow, maybe on login?)
