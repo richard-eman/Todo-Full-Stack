@@ -31,7 +31,8 @@ class AddTask extends React.Component {
   handleSubmit = e => {
     const task = {
       task_name: this.state.name,
-      details: this.state.details
+      details: this.state.details,
+      priority: this.state.priority
     }
     e.preventDefault()
     addTask(task)
