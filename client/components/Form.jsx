@@ -1,14 +1,33 @@
 import React from "react"
+import { connect } from 'react-redux'
 
-import { addTask } from "../apis"
+import { setTaskToEdit } from '../actions'
+
+import { checkIfEditing, setTaskIdToUndefined, setTask, postWithCorrectApi } from '../functions/Form'
 
 class Form extends React.Component {
 	state = {
-    name: "",
+		name: "",
     details: "",
     priority: "",
   }
-	
+
+	componentDidMount() {
+		const editingCheck = checkIfEditing(this.props.task.id)
+		if ( editingCheck == true ) {
+			this.setState({
+				name: this.props.task.task_name,
+				details: this.props.task.details,
+				priority: this.props.task.priority
+			})
+		}
+	}
+
+	componentWillUnmount() {
+		// This is to clear the id used for checking whether a user is editing. Temporary until I make GS for editing check.
+		this.props.dispatch(setTaskToEdit(setTaskIdToUndefined()))
+	}
+
   handleChange = e => {
     if ( e.target.name == "details"){
       this.setState({
@@ -28,14 +47,10 @@ class Form extends React.Component {
   }
 
   handleSubmit = e => {
-    const task = {
-			// id: this.props.task.id,
-      task_name: this.state.name,
-      details: this.state.details,
-      priority: this.state.priority
-    }
-    e.preventDefault()
-    addTask(task)
+		e.preventDefault()
+		const editingCheck = checkIfEditing(this.props.task.id)
+		const task = setTask(this.state.name, this.state.details, this.state.priority, this.props.task.id, editingCheck)
+		postWithCorrectApi(task, editingCheck)
     location.assign('http://localhost:3000/#/todo-list')
   }
 
@@ -68,4 +83,10 @@ class Form extends React.Component {
 	}
 }
 
-export default Form
+function mapStateToProps(globalState) {
+  return {
+    task: globalState.tasks.task
+  }
+}
+
+export default connect(mapStateToProps)(Form)

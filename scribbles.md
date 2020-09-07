@@ -452,21 +452,25 @@ oAdd
   onew object to post
   oboth already ready <3api db
 Edit form stuff
-  form
-  new object to post
-should I and can I make functions to reuse them?
-add text to form.
+  oform
+  onew object to post
+  oPlaceholder, set ID to undefined.need to clear global state on submit
+Create global state EditingCheck boolean
+oyes.should I and can I make functions to reuse them? (I meant in a new file)
+add text to form. (What?)
 CSS and make not ugly
-make form component
-make functions file for refactoring
+omake form component
+omake functions file for refactoring
 Completed button
 make priority show in TodoList without label (ie "Priority: High" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
-  can i send blank field to db (cause of json)?
+  oyes.can i send blank field to db (cause of json)?
 
 ## Extra
+schedule notifications (push?)
+  for all tasks with priority A and B
 Search function
   prioritisation, name etc
-function that deletes task
+deleting tasks
   change task (deleted message)(what?) and then make it shrink before refreshing page (use a timeout?)
   update?(?)
   replace thing with message "deleted" and then remove?
