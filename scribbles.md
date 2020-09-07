@@ -483,3 +483,20 @@ deleting tasks
 -How can I stop calling server for data keeping in mind user refreshing and shift+R refreshing? <-- this means I can't only get data after logging in for example.
   Can have a refresh button on page like some apps have sync button.
   This means I can get data initially once (somehow, maybe on login?)
+
+## I want to commit something like this now.
+feat: add hat wobble
+
+^--^ ^------------^
+| |
+| +-> Summary in present tense.
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test.
+
+chore: add Oyster build script
+docs: explain hat wobble
+feat: add beta sequence
+fix: remove broken confirmation message
+refactor: share logic between 4d3d3d3 and flarhgunnstow
+style: convert tabs to spaces
+test: ensure Tayne retains clothing
