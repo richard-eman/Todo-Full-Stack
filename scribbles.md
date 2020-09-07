@@ -7,27 +7,27 @@
 * task_name - text
 * details - text
 * priority - text or can i do multi choice? I guess it would still be text, just the gui would be multi choice.
-* completed - boolean
+* completed - boolean (values are numbers 1 and 0)
 I had some other idea...
 future user_id
 
 ## API stuff:
 
-API
-  api does requesting, processing, and responding.
-  looks like routing
+### Routes - Server
 
-Redux
-  this is for global state so I don't need to pass things through props and back up with funtions.
-  Useful for apps with lots of components.
+http://localhost:3000
 
-Actions
-  the return for switches.
-  the data for reducer and db functions(?)
-  
-Reducers
-  imports action and has a switch which uses the action if case matches an action name.
-  combine so there isn't one massive file but individual files related to a certain thing or task.
+/list - gets user's todo list
+/edit
+/add
+/delete
+
+### Routes - Hash
+
+/ - Homepage / login (future)
+/todo-list
+/add
+/edit
 
 ### actions:
 
@@ -38,12 +38,30 @@ EDIT_TASK - changes thing if a change has been made to it
 DELETE_TASK - deletes task based on name and or id
 
 
-### db functions
-- reducer will
+## Old Readme stuff
+
+### stuff I wrote to jog my memory
+
+API
+  api does requesting, processing, and responding.
+  looks like routing (superagent)
+
+Redux
+  this is for global state so I don't need to pass things through props and back up with funtions.
+  Useful for apps with lots of components that could be nested in different components.
+
+Actions
+  the return for switches.
+  the data for reducer and db functions(?)
+  
+Reducers
+  imports action and has a switch which uses the action if case matches an action name.
+  combine so there isn't one massive file but individual files related to a certain thing or task.
+
+db functions
+- reducer will (?)
 - need to stringify and parse json files (in db functions or in that other file we used?).
-
-make that one api thing work (get tasks)
-
+omake that one api thing work (get tasks)
 
 
 
@@ -84,12 +102,10 @@ Nope -did I set up redux (it's components(reducer etc))?
 new feature
 - I'd like to edit order shown in list
 
+### look up thunk again
 
 
-##### look up thunk again
-
-
-## ToDo for the ToDo List web app
+### ToDo for the ToDo List web app
 
 - oFind where I made designs in notebook
 - olist components
