@@ -447,7 +447,8 @@ omaking pages do something:
 ## Sept wk2
 
 finish new form features and DB side of things
-  is table ready for new properties? remember how to mess with json...
+Add
+  oit was. is table ready for new properties? remember how to mess with json...
   new object to post
   api
   db
@@ -461,8 +462,13 @@ add text to form.
 CSS and make not ugly
 make form component
 make functions file for refactoring
+Completed button
+make priority show in TodoList without label (ie "Priority: High" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
+  can i send blank field to db (cause of json)?
 
 ## Extra
+Search function
+  prioritisation, name etc
 function that deletes task
   change task (deleted message)(what?) and then make it shrink before refreshing page (use a timeout?)
   update?(?)
