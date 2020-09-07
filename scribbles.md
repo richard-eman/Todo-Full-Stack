@@ -447,17 +447,14 @@ omaking pages do something:
 ## Sept wk2
 
 finish new form features and DB side of things
-Add
+oAdd
   oit was. is table ready for new properties? remember how to mess with json...
-  new object to post
-  api
-  db
+  onew object to post
+  oboth already ready <3api db
 Edit form stuff
   form
   new object to post
-  api
-  db
-    should I and can I make functions to reuse them?
+should I and can I make functions to reuse them?
 add text to form.
 CSS and make not ugly
 make form component
