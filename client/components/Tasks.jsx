@@ -21,7 +21,7 @@ class Tasks extends React.Component {
       <div>
         <h3>{task.task_name}</h3>
         <p>{task.details}</p>
-        <p>Priority: {task.priority}</p>
+        <p>{task.priority}</p>
         <DeleteButton id={task.id} />
         <Router>
           <Link to="/edit">
