@@ -15,7 +15,7 @@ class Todo extends React.Component {
 
   render() {
     return (
-      <>
+      <ul className="todo-list">
         <Router>
           <h3><Link to="/add">Add New Task</Link></h3>
         </Router>
@@ -24,7 +24,7 @@ class Todo extends React.Component {
             return <Tasks task={task} key={task.id} />
           })
         }
-      </>
+      </ul>
     )
   }
 }

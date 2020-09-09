@@ -9,7 +9,7 @@ import EditTask from './EditTask'
 const App = () => {
 
   return (
-    <>
+    <div className="app">
 
       <Router>
       <h1><Link to="/">Todo List</Link></h1>
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/add" component={AddTask} />
         <Route path="/edit" component={EditTask} />
       </Router>
-    </>
+    </div>
   )
 }
 
