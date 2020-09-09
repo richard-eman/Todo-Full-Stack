@@ -424,7 +424,7 @@ conditional stuff to work with hash router
 
 # Current Scribbles September
 
-## September wk1 friday
+## September Week 1 Friday
 
 omake apis return something:
 -delete
@@ -444,7 +444,7 @@ omaking pages do something:
   oUsed window.location.reload() to delete butt.
   o// e.preventDefault() not needed with buttons as they have no default behavior
 
-## Sept wk2
+## Sept Week 2
 
 finish new form features and DB side of things
 oAdd
@@ -457,19 +457,25 @@ Edit form stuff
   oPlaceholder, set ID to undefined.need to clear global state on submit
 Create global state EditingCheck boolean
 oyes.should I and can I make functions to reuse them? (I meant in a new file)
-add text to form. (What?)
-CSS and make not ugly
 omake form component
 omake functions file for refactoring
+Add text to priority box on edit.
+CSS and make not ugly
 Completed button
 make priority show in TodoList without label (ie "Priority: High" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
-  oyes.can i send blank field to db (cause of json)?
+  oyes.Can i send blank field to db (cause of json)?
 
 ## Extra
+Check list
+  sorting this list
 schedule notifications (push?)
   for all tasks with priority A and B
 Search function
   prioritisation, name etc
+Could make higher priority things load at the top of the list
+  could make the filter/search thing
+Manual sorting
+  Should css and actually design first.
 deleting tasks
   change task (deleted message)(what?) and then make it shrink before refreshing page (use a timeout?)
   update?(?)
