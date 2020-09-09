@@ -24,8 +24,7 @@ class Form extends React.Component {
 	}
 
 	componentWillUnmount() {
-		// This is to clear the id used for checking whether a user is editing. Temporary until I make GS for editing check.
-		// this.props.dispatch(setTaskToEdit(setTaskIdToUndefined()))
+		//So the task in GS won't show when adding.
 		this.props.dispatch(clearTaskFromGlobalState())
 	}
 
