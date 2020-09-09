@@ -1,7 +1,7 @@
 import React from "react"
 import { connect } from 'react-redux'
 
-import { setTaskToEdit } from '../actions'
+import { clearTaskFromGlobalState } from '../actions'
 
 import { checkIfEditing, setTaskIdToUndefined, setTask, postWithCorrectApi } from '../functions/Form'
 
@@ -25,7 +25,8 @@ class Form extends React.Component {
 
 	componentWillUnmount() {
 		// This is to clear the id used for checking whether a user is editing. Temporary until I make GS for editing check.
-		this.props.dispatch(setTaskToEdit(setTaskIdToUndefined()))
+		// this.props.dispatch(setTaskToEdit(setTaskIdToUndefined()))
+		this.props.dispatch(clearTaskFromGlobalState())
 	}
 
   handleChange = e => {

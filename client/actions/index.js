@@ -4,6 +4,7 @@ export const SHOW_ERROR = 'SHOW_ERROR'
 export const LIST_TASKS = 'LIST_TASKS'
 export const DELETE_TASK = 'DELETE_TASK'
 export const EDIT_TASK = 'EDIT_TASK'
+export const CLEAR_TASK = 'CLEAR_TASK'
 
 export function setListOfTasks(tasks) {
   return {
@@ -25,5 +26,12 @@ export function setTaskToEdit(withObject) {
   return {
     type: EDIT_TASK,
     task: withObject
+  }
+}
+
+export function clearTaskFromGlobalState() {
+  return {
+    type: CLEAR_TASK,
+    task: {}
   }
 }
