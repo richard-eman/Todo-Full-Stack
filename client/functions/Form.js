@@ -15,23 +15,31 @@ export function setTaskIdToUndefined() {
   return task
 }
 
+function setTaskIfEdited(name, details, priority, idForDB){
+  const task = {
+    id: idForDB,
+    task_name: name,
+    details: details,
+    priority: priority
+  }
+  return task
+}
+
+function setTaskIfAdding(name, details, priority){
+  const task = {
+    task_name: name,
+    details: details,
+    priority: priority
+  }
+  return task
+}
+
 export function setTask(name, details, priority, idForDB, editingCheck) {
   if ( editingCheck == true ) {
-    const task = {
-      id: idForDB,
-      task_name: name,
-      details: details,
-      priority: priority
-    }
-    return task
+    return setTaskIfEdited(name, details, priority, idForDB)
   }
   else {
-    const task = {
-      task_name: name,
-      details: details,
-      priority: priority
-    }
-    return task
+    return setTaskIfAdding(name, details, priority)
   }
 }
 
