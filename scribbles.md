@@ -482,6 +482,8 @@ deleting tasks
   replace thing with message "deleted" and then remove?
   replace using state change?(to refresh?)
 
+What was this for? /* component={() => <button onClick={}></button>} */
+
 ## Issues
 -delete button
   page uses server even with false in window.location.reload() argument :((( Maybe because the api call is made on mount in TodoList

@@ -7,9 +7,7 @@ import Tasks from './Tasks'
 import { fetchTasks } from '../actions'
 
 class Todo extends React.Component {
-  state = {
-    tasks: []
-  }
+  state = {}
 
   componentDidMount() {
     this.props.dispatch(fetchTasks())

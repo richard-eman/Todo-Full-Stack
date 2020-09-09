@@ -7,12 +7,7 @@ import { setTaskToEdit, isUserEditingTask } from '../actions'
 import DeleteButton from './DeleteButton'
 
 class Tasks extends React.Component {
-  state = {
-  }
-
-  componentDidMount() {
-
-  }
+  state = {}
   
   handleClick = () => {
     this.props.dispatch(isUserEditingTask(true))

@@ -3,8 +3,6 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom'
 
 class App extends React.Component {
 
-  // component={() => <button onClick={}></button>}
-  // Will sort this out later... Will do api and form stuff rn
   render() {
     return (
       <>
