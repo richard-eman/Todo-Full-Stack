@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { HashRouter as Router, Link } from 'react-router-dom'
 
-import { setTaskToEdit } from '../actions'
+import { setTaskToEdit, isUserEditingTask } from '../actions'
 
 import DeleteButton from './DeleteButton'
 
@@ -15,6 +15,7 @@ class Tasks extends React.Component {
   }
   
   handleClick = () => {
+    this.props.dispatch(isUserEditingTask(true))
     this.props.dispatch(setTaskToEdit(this.props.task))
   }
 

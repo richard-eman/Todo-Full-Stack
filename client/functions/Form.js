@@ -1,6 +1,9 @@
 import { addTask } from "../apis"
 import { editTask } from '../apis'
 
+/* New Redux actions negate the need for these
+(clearTaskFromGlobalState and isUserEditingTask use less lines).
+
 export function checkIfEditing(taskIdFromGlobalState) {
   if (taskIdFromGlobalState == undefined){
     return false
@@ -14,6 +17,7 @@ export function setTaskIdToUndefined() {
   }
   return task
 }
+*/
 
 function setTaskIfEdited(name, details, priority, idForDB){
   const task = {
