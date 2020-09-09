@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from './Form'
+import BackButton from './BackButton'
 
 class AddTask extends React.Component {
   state = {}
@@ -8,6 +9,7 @@ class AddTask extends React.Component {
     return (
       <>
         <h2>AddTask</h2>
+        <BackButton/>
         <Form/>
       </>
     )
