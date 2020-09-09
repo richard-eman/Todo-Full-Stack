@@ -1,9 +1,9 @@
-import { LIST_TASKS, EDIT_TASK, CLEAR_TASK } from "../actions"
+import { LIST_TASKS, EDIT_TASK, CLEAR_TASK, SET_FORM_MODE } from "../actions"
 
 const initialState = {
   tasks: [],
   task: {},
-  // isUserEditing: false,
+  isUserEditing: false,
 }
 
 const reducer = (state = initialState, action) => {
@@ -17,13 +17,16 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         task: action.task,
-        // isUserEditing: true,
       }
     case CLEAR_TASK:
       return {
         ...state,
         task: action.task,
-        // isUserEditing: false,
+      }
+    case SET_FORM_MODE:
+      return {
+        ...state,
+        isUserEditing: action.isUserEditing,
       }
     default:
       return state
