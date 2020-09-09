@@ -18,7 +18,7 @@ class Tasks extends React.Component {
     const task = this.props.task
 
     return (
-      <div>
+      <li>
         <h3>{task.task_name}</h3>
         <p>{task.details}</p>
         <p>{task.priority}</p>
@@ -28,7 +28,7 @@ class Tasks extends React.Component {
             <button onClick={this.handleClick}>Edit Task</button>
           </Link>
         </Router>
-      </div>
+      </li>
     )
   }
 }

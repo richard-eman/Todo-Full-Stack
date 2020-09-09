@@ -446,24 +446,25 @@ omaking pages do something:
 
 ## Sept Week 2
 
-finish new form features and DB side of things
+ofinish new form features
 oAdd
   oit was. is table ready for new properties? remember how to mess with json...
   onew object to post
   oboth already ready <3api db
-Edit form stuff
+oEdit form stuff
   oform
   onew object to post
   oPlaceholder, set ID to undefined.need to clear global state on submit
-Create global state EditingCheck boolean
+oCreate global state EditingCheck boolean
 oyes.should I and can I make functions to reuse them? (I meant in a new file)
 omake form component
 omake functions file for refactoring
 Add text to priority box on edit.
 CSS and make not ugly
 Completed button
-make priority show in TodoList without label (ie "Priority: High" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
+oMake priority show in TodoList without label (ie "Priority: High" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
   oyes.Can i send blank field to db (cause of json)?
+Make it so that logged in boolean stops home button from going to landing page and instead, your todo list.
 
 ## Extra
 Check list
