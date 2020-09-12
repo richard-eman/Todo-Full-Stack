@@ -34,9 +34,9 @@ h1 {
 
 .todo-list li {
   display: flex;
+    justify-content: space-between;
   margin: 0 -3rem 4px;
-  padding: 1.1rem 3rem;
-  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
   align-items: center;
   background: rgba(255,255,255,0.05);
 }
@@ -52,14 +52,37 @@ a:hover {
   color: #83a2cf;
 }
 
+button {
+  font-family: 'Quicksand', sans-serif;
+  /* height: 1.7rem; */
+  color: #cacaca;
+  cursor: pointer;
+  transition: color .2s ease-out;
+  background: #2c4f84;
+  padding: 0 0.9rem;
+  /* why can i not set height here but just below */
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  transition: background .2s ease-out;
+  border: 1px solid rgba(255,255,255,.3);
+  /* text-transform: uppercase; */
+
+}
+
+button:hover {
+  background: #4b6da0;
+} 
+
 form {
-  margin-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+form label {
+  display: block;
+  /* margin-top: 1; */
 }
 
 form input {
-  flex-grow: 1;
   border: none;
   background: #f7f1f1;
   padding: 0 1.5em;
@@ -67,12 +90,15 @@ form input {
 }
 
 form input[type="submit"] {
-  padding:0 1.3rem;
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 0.7rem;
+  /* margin-left: 0; */
+  padding: 0 1.3rem;
   color: #cacaca;
   background: #2c4f84;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border: 1px solid rgba(255,255,255,.3);
-  margin-left: 5px;
   cursor: pointer;
   transition: background .2s ease-out;
 }
@@ -81,7 +107,9 @@ form input[type="submit"]:hover {
   background: #4b6da0;
 } 
 
-form input, 
+form input,
+form select, 
 form input[type="submit"] {
-  height: 3rem;
+  height: 2rem;
+  /* margin-top: 1; */
 }
