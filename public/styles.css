@@ -54,7 +54,6 @@ a:hover {
 
 button {
   font-family: 'Quicksand', sans-serif;
-  /* height: 1.7rem; */
   color: #cacaca;
   cursor: pointer;
   transition: color .2s ease-out;
@@ -65,7 +64,6 @@ button {
   padding-bottom: 0.3rem;
   transition: background .2s ease-out;
   border: 1px solid rgba(255,255,255,.3);
-  /* text-transform: uppercase; */
 
 }
 
@@ -93,11 +91,9 @@ form input[type="submit"] {
   display: block;
   font-family: 'Quicksand', sans-serif;
   margin-top: 0.7rem;
-  /* margin-left: 0; */
   padding: 0 1.3rem;
   color: #cacaca;
   background: #2c4f84;
-  /* text-transform: uppercase; */
   border: 1px solid rgba(255,255,255,.3);
   cursor: pointer;
   transition: background .2s ease-out;

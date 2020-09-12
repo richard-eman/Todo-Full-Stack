@@ -11,7 +11,7 @@ const BackButton = props => {
   }
 
   return (
-    <button onClick={handleClick}>Go Back</button>
+    <button onClick={handleClick}>Back</button>
   )
 }
 

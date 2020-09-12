@@ -12,7 +12,7 @@ class DeleteButton extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>DeleteButton</button>
+      <button onClick={this.handleClick}>Delete</button>
     )
   }
 }

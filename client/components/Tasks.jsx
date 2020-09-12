@@ -25,7 +25,7 @@ class Tasks extends React.Component {
         <DeleteButton id={task.id} />
         <Router>
           <Link to="/edit">
-            <button onClick={this.handleClick}>Edit Task</button>
+            <button onClick={this.handleClick}>Edit</button>
           </Link>
         </Router>
       </li>
