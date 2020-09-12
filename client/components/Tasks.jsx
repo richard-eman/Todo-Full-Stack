@@ -19,15 +19,19 @@ class Tasks extends React.Component {
 
     return (
       <li>
-        <h3>{task.task_name}</h3>
-        <p>{task.details}</p>
-        <p>{task.priority}</p>
-        <DeleteButton id={task.id} />
-        <Router>
-          <Link to="/edit">
-            <button onClick={this.handleClick}>Edit</button>
-          </Link>
-        </Router>
+        <div className="taskContent">
+          <h3>{task.task_name}</h3>
+          <p>{task.details}</p>
+        </div>
+        <div className="taskButtonArea">
+          <p>{task.priority}</p>
+          <Router>
+            <Link to="/edit">
+              <button onClick={this.handleClick}>Edit</button>
+            </Link>
+          </Router>
+          <DeleteButton id={task.id} />
+        </div>
       </li>
     )
   }

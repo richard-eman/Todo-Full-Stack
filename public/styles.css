@@ -34,11 +34,29 @@ h1 {
 
 .todo-list li {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
   margin: 0 -3rem 4px;
   padding: 0.5rem 1.5rem;
   align-items: center;
   background: rgba(255,255,255,0.05);
+}
+
+.todo-list li div.taskContent {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  /* flex: 3; */
+}
+
+.todo-list li div.taskButtonArea {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  width: 7rem;
+}
+
+h2 {
+  display: inline;
 }
 
 a {
@@ -53,15 +71,17 @@ a:hover {
 }
 
 button {
-  font-family: 'Quicksand', sans-serif;
-  color: #cacaca;
-  cursor: pointer;
-  transition: color .2s ease-out;
-  background: #2c4f84;
-  padding: 0 0.9rem;
+  width: 5rem;
+  float: right;
+  height: 2rem;
+  padding: 0 1.3rem;
   /* why can i not set height here but just below */
   padding-top: 0.2rem;
   padding-bottom: 0.3rem;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  color: #cacaca;
+  background: #2c4f84;
   transition: background .2s ease-out;
   border: 1px solid rgba(255,255,255,.3);
 
@@ -72,7 +92,10 @@ button:hover {
 } 
 
 form {
-  margin-top: 1.5rem;
+  background: rgba(255,255,255,0.05);
+  margin: 0 -3rem 4px;
+  margin-top: 2rem;
+  padding: 0.5rem 1.5rem;
 }
 
 form label {
@@ -88,9 +111,8 @@ form input {
 }
 
 form input[type="submit"] {
-  display: block;
+  float: right;
   font-family: 'Quicksand', sans-serif;
-  margin-top: 0.7rem;
   padding: 0 1.3rem;
   color: #cacaca;
   background: #2c4f84;
@@ -101,7 +123,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
   background: #4b6da0;
-} 
+}
 
 form input,
 form select, 
