@@ -459,11 +459,16 @@ oCreate global state EditingCheck boolean
 oyes.should I and can I make functions to reuse them? (I meant in a new file)
 omake form component
 omake functions file for refactoring
-Add text to priority box on edit.
-CSS and make not ugly
-Completed button
-oMake priority show in TodoList without label (ie "Priority: High" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
+oMake priority show in TodoList without label (ie "Priority: oHigh" (label) vs "High Priority" (no label)) This is because if the user doesn't select priority, I want the field to be blank. Less screen clutter.
   oyes.Can i send blank field to db (cause of json)?
+Add text to priority box when editing (it always loads blank).
+oCSS and make not ugly
+  make buttons un-ugly
+Make like drawings.
+have pages aswell as home page (the app i currently use is bloated with notes...)
+eh maybe not.Completed button
+  Won't delete. will just check done?
+checklist option for tasks so you can make shopping lists etc
 Make it so that logged in boolean stops home button from going to landing page and instead, your todo list.
 
 ## Extra
