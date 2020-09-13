@@ -470,6 +470,9 @@ eh maybe not.Completed button
   Won't delete. will just check done?
 checklist option for tasks so you can make shopping lists etc
 Make it so that logged in boolean stops home button from going to landing page and instead, your todo list.
+make it so clicking todlist makes initial load
+make refresh button to call server again
+make api's return tasks that will replace what's in store (global state).
 
 ## Extra
 Check list
